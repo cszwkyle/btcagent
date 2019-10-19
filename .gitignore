@@ -30,3 +30,5 @@
 
 # build dir & files
 /build*/
+/out/build/x64-Debug
+/.vs

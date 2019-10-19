@@ -63,7 +63,7 @@ class StratumSessionEth;
 class EthProtocol {
 protected:
   StratumSessionEth &session_;
-  explicit EthProtocol(StratumSessionEth &session) : session_{session} {}
+  explicit EthProtocol(const StratumSessionEth &session) : session_{session} {}
 public:
   virtual ~EthProtocol() = default;
   virtual void handleRequest(const string &idStr, const StratumMessageEth &smsg) = 0;
